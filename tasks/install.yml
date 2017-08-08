@@ -27,6 +27,7 @@
   service:
     name: slapd
     state: started
+    enabled: yes
 
 - name: Copy LDIF files to server
   copy:
