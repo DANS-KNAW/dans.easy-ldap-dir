@@ -31,6 +31,6 @@
   setup: filter=ansible_local
   when: facts.changed
 
-- include: install.yml
+- import_tasks: install.yml
   when: ansible_local.easy_ldap.installed == False
 
