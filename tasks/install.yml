@@ -1,7 +1,6 @@
 - name: Install OpenLDAP
   yum:
-    name: "{{ item }}"
-  with_items:
+    name:
     - openldap-servers
     - openldap-clients
 
